@@ -12,16 +12,12 @@
     <title>[Keyrus - Server Logs]</title>
   </head>
   <body>
-
-        <nav class ="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-            <a class ="navbar-brand h1 mb-0" href="#">Keyrus - Log</a>
-            <h4>
-            <span id="countdowntimer">30 </span> Seconds to refresh
-          </h4>
+    <nav class ="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+          <a class ="navbar-brand h1 mb-0" href="#">Keyrus - Logs</a>
+            <h4><span id="countdowntimer">30</span> Seconds to refresh</h4>
             <button onclick="refreshNow()" class="btn btn-primary btn-refresh ">Refresh now</button>
-        </nav>
-        
+    </nav>
         <table class ="table table-striped table-sm">
           <thead>
             <tr>
@@ -29,31 +25,33 @@
             </tr>
           </thead>
           <tbody>
+            <!-- Local onde será implementado o ForEach com a listagem-->
+            <!-- ForEach precisa ser criado com [<tr><td><div class ="content> </div></td></tr>]-->
               <tr>
                   <td>
-                    <div class ="content">INFO  [de.hybris.platform.atddengine.ant.tasks.GenerateProxies] [89] Log4j properly initialized!
+                    <div class ="content">INFO  [de.hybris.platform.atddengine.ant.tasks.GenerateProxies] [89] Log4j properly initialized!</div>
                   </td>
                  </tr>
                  <tr>
                     <td>
-                      <div class ="content">WARN  [de.hybris.platform.atddengine.ant.tasks.GenerateProxies] [89] Log4j properly initialized!
+                      <div class ="content">WARN  [de.hybris.platform.atddengine.ant.tasks.GenerateProxies] [89] Log4j properly initialized!</div>
                     </td>
                    </tr>
                    <tr>
                       <td>
-                        <div class ="content">FATAL  [de.hybris.platform.atddengine.ant.tasks.GenerateProxies] [89] Log4j properly initialized!
+                        <div class ="content">FATAL  [de.hybris.platform.atddengine.ant.tasks.GenerateProxies] [89] Log4j properly initialized!</div>
                       </td>
                      </tr>
+                     <!--Fim ForEach-->
           </tbody>
         </table>
-  </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/jquery/dist/InformColor.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.js"></script>
-    <script src="node_modules/bootstrap/js/timeCountdown.js"></script>
+    <script src="node_modules/bootstrap/js/dist/timeCountdown.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   </body>
 </html>
